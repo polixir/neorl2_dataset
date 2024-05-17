@@ -14,15 +14,13 @@ pip isntall neorl2
 
 #### 2. Install neorl2_dataset
 
-We use [tianshou](https://github.com/thu-ml/tianshou), a popular RL framework, to train the behavioral policies. Please install the tianshou through GitHub:
-
 ```
 git clone https://jg.gitlab.polixir.site/polixir/neorl2_dataset.git
 cd neorl2_dataset
 pip install -e .
 ```
 
-After installation, Pipeline、Simglucose、RocketRecover、DMSD and Fusion environments will be available. However, the "RandomFrictionHopper" and "SafetyHalfCheetah" tasks rely on MuJoCo. If you need to use these two environments, it is necessary to obtain a [license](https://www.roboti.us/license.html) and follow the setup instructions, and then run:
+After installation neorl2, Pipeline、Simglucose、RocketRecover、DMSD and Fusion environments will be available. However, the "RandomFrictionHopper" and "SafetyHalfCheetah" tasks rely on MuJoCo. If you need to use these two environments, it is necessary to obtain a [license](https://www.roboti.us/license.html) and follow the setup instructions, and then run:
 
 ```
 pip install -e .[mujoco]
